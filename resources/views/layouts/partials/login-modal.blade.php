@@ -7,11 +7,11 @@
                         <h4 class="modal-title" id="Login">登入/註冊創坑</h4>
                     </div>
                     <div class="modal-body">
-                        {!! Form::open(['route' => 'Auth.process','method' => 'POST', 'class' => 'form-group'])!!}
+                        {!! Form::open(['url' => 'auth/login','method' => 'POST', 'class' => 'form-group'])!!}
                         <div class='col-md-12'>
                         <div class="row control-group{{ $errors->has('username') ? ' has-error' : '' }}">
-                                {!! Form::label('username', '帳號') !!}
-                                {!! Form::email('username', null, ['name' => 'username', 'class' => 'form-control', 'placeholder' => '帳號', 'data-validation-required-message' => 'email', 'required']) !!}
+                                {!! Form::label('username', '電子信箱') !!}
+                                {!! Form::email('email', null, ['name' => 'email', 'class' => 'form-control', 'placeholder' => '帳號', 'data-validation-required-message' => 'email', 'required']) !!}
                                 <p class="help-block text-danger"></p>
                         </div>
                         <div class="row control-group">

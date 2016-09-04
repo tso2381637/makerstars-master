@@ -179,9 +179,4 @@ class AuthController extends Controller
         ]);
     }
 
-    private function login(){
-      if(Auth::attempt(['name' => Input::get('username'),'password' => Input::get('password')])){
-        return Redirect::route('home');
-      }
-    }
 }

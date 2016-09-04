@@ -9,12 +9,12 @@
         <div class="container">
 
             <div class="row">
-                {{--
+
                 <div class="col-md-6">
                     <div class="box">
                         <h2 class="text-uppercase">登入創坑</h2>
 
-                        <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
+                        <form class="form-horizontal" role="form" method="POST" url="auth/login">
                             {!! csrf_field() !!}
 
                             <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
@@ -68,7 +68,7 @@
                         <p class="text-center text-muted">尚未註冊？ <a href="{{ url('register') }}"><strong>立即註冊！</strong></a></p>
                         <p class="text-center text-muted">簡單快速只要 1 分鐘就能完成註冊，馬上註冊開始使用創坑！</p>
                     </div>
-                </div> --}}
+                </div>
 
                 <div class="col-md-6">
                     <div class="box">

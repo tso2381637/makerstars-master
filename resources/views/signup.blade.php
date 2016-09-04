@@ -26,29 +26,25 @@
 
                             <hr>
 
-                            <form action="{{ url('/login') }}" method="post" role="form">
+                            <form action="{{ url('auth/login') }}" method="post" role="form">
                               {!! csrf_field() !!}
-                                <div class="form-group {{ $errors->has('email') ? 'has-error' : ''}}">
+                                <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
                                     <label for="email">電子郵件</label>
                                     <input type="text" class="form-control" name="email">
-                                    @if($errors->has('email'))
-                                      <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                      </span>
+                                    @if ($errors->has('email'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('email') }}</strong>
+                                        </span>
                                     @endif
                                 </div>
-                                <div class="form-group" {{ $errors->has('password') ? 'has-error' : ''}}>
+                                <div class="form-group">
                                     <label for="password">密碼</label>
                                     <input type="password" class="form-control" name="password">
-                                    @if($errors->has('email'))
-                                      <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                      </span>
-                                    @endif
                                 </div>
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-template-main"><i class="fa fa-sign-in"></i> Log in</button>
+                                {!! Form::submit('Log in',['class' =>'btn btn-template-main fa fa-sign-in'])!!}
                                 </div>
+
                             </form>
                         </div>
                     </div>
