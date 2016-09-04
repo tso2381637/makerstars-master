@@ -26,14 +26,25 @@
 
                             <hr>
 
-                            <form action="customer-orders.html" method="post">
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="text" class="form-control" id="email">
+                            <form action="{{ url('/login') }}" method="post" role="form">
+                              {!! csrf_field() !!}
+                                <div class="form-group {{ $errors->has('email') ? 'has-error' : ''}}">
+                                    <label for="email">電子郵件</label>
+                                    <input type="text" class="form-control" name="email">
+                                    @if($errors->has('email'))
+                                      <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                      </span>
+                                    @endif
                                 </div>
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input type="password" class="form-control" id="password">
+                                <div class="form-group" {{ $errors->has('password') ? 'has-error' : ''}}>
+                                    <label for="password">密碼</label>
+                                    <input type="password" class="form-control" name="password">
+                                    @if($errors->has('email'))
+                                      <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                      </span>
+                                    @endif
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-template-main"><i class="fa fa-sign-in"></i> Log in</button>

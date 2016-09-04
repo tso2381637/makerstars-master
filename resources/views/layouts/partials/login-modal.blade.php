@@ -9,14 +9,14 @@
                     <div class="modal-body">
                         {!! Form::open(['route' => 'Auth.process','method' => 'POST', 'class' => 'form-group'])!!}
                         <div class='col-md-12'>
-                        <div class="row control-group">
+                        <div class="row control-group{{ $errors->has('username') ? ' has-error' : '' }}">
                                 {!! Form::label('username', '帳號') !!}
-                                {!! Form::email('username', null, ['id' => 'username', 'class' => 'form-control', 'placeholder' => '帳號', 'data-validation-required-message' => 'email', 'required']) !!}
+                                {!! Form::email('username', null, ['name' => 'username', 'class' => 'form-control', 'placeholder' => '帳號', 'data-validation-required-message' => 'email', 'required']) !!}
                                 <p class="help-block text-danger"></p>
                         </div>
                         <div class="row control-group">
                                 {!! Form::label('password', '密碼') !!}
-                                {!! Form::password('password', ['id' => 'password', 'class' => 'form-control', 'placeholder' => '密碼', 'data-validation-required-message' => '請輸入密碼', 'required']) !!}
+                                {!! Form::password('password', ['name' => 'password', 'class' => 'form-control', 'placeholder' => '密碼', 'data-validation-required-message' => '請輸入密碼', 'required']) !!}
                                 <p class="help-block text-danger"></p>
                         </div>
 
@@ -31,7 +31,7 @@
                       </div>
 
                         <p class="text-center text-muted">尚未註冊？</p>
-                        <p class="text-center text-muted"><a href="{{ url('register') }}"><strong>現在註冊！</strong></a> 簡單快速只要 1 分鐘就能完成註冊，馬上註冊開始使用創坑！</p>
+                        <p class="text-center text-muted"><a href="{{ url('signup') }}"><strong>現在註冊！</strong></a> 簡單快速只要 1 分鐘就能完成註冊，馬上註冊開始使用創坑！</p>
 
                     </div>
                 </div>

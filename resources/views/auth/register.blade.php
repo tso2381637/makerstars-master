@@ -1,8 +1,8 @@
 <h2 class="text-uppercase">建立您的創坑帳戶</h2>
 
 <p class="lead">還沒有註冊創坑帳戶？</p>
-<p>With registration with us new world of fashion, fantastic discounts and much more opens to you! The whole process will not take you more than a minute!</p>
-<p class="text-muted">If you have any questions, please feel free to <a href="contact.html">contact us</a>, our customer service center is working for you 24/7.</p>
+<p>馬上快速註冊</p>
+<p class="text-muted">有任何問題請馬上<a href="contact.html">聯絡</a>我們</p>
 
 <hr>
 <form role="form" method="POST" action="{{ url('/register') }}">
