@@ -43,10 +43,13 @@
                                 </div>
                                 <div class="text-center">
                                 {!! Form::submit('Log in',['class' =>'btn btn-template-main fa fa-sign-in'])!!}
-                                </div>
+                              </div>
 
                             </form>
+                            <div class="form-group col-md-12"
+                            <a class="btn btn-block btn-social btn-lg btn-google" href="{{ url('/auth/google') }}"><i class="fa fa-google"></i>Sign in with Google</a>
                         </div>
+                      </div>
                     </div>
 
                 </div>

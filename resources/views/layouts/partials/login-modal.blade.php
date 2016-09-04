@@ -11,7 +11,7 @@
                         <div class='col-md-12'>
                         <div class="row control-group{{ $errors->has('username') ? ' has-error' : '' }}">
                                 {!! Form::label('username', '電子信箱') !!}
-                                {!! Form::email('email', null, ['name' => 'email', 'class' => 'form-control', 'placeholder' => '帳號', 'data-validation-required-message' => 'email', 'required']) !!}
+                                {!! Form::email('email', null, ['name' => 'email', 'class' => 'form-control', 'placeholder' => '信箱', 'data-validation-required-message' => 'email', 'required']) !!}
                                 <p class="help-block text-danger"></p>
                         </div>
                         <div class="row control-group">
