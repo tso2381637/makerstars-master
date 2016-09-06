@@ -24,7 +24,7 @@
                             <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
                                 ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 
-                            <hr>
+                            <!--<hr>-->
 
                             <form action="{{ url('auth/login') }}" method="post" role="form">
                               {!! csrf_field() !!}
@@ -43,12 +43,13 @@
                                 </div>
                                 <div class="text-center">
                                 {!! Form::submit('Log in',['class' =>'btn btn-template-main fa fa-sign-in'])!!}
-                              </div>
-
+                                <br></br>
+                              <div class="col-ms-2">
+                                  <a class="btn btn-social btn-lg btn-google" href="{{ url('/auth/google') }}"><i class="fa fa-google"></i>Sign in with Google</a>
+                            </div>
+                          </div>
                             </form>
-                            <div class="form-group col-md-12"
-                            <a class="btn btn-block btn-social btn-lg btn-google" href="{{ url('/auth/google') }}"><i class="fa fa-google"></i>Sign in with Google</a>
-                        </div>
+
                       </div>
                     </div>
 
