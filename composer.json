@@ -12,7 +12,8 @@
         "recca0120/terminal": "^1.4",
         "doctrine/dbal": "^2.5",
         "laravelcollective/html": "^5.2",
-        "guzzlehttp/guzzle": "^6.0"
+        "guzzlehttp/guzzle": "^6.0",
+        "google/apiclient": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
