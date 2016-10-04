@@ -608,22 +608,22 @@
         },
         {
             "name": "google/apiclient",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "18dd5534280318598e8770cb7929e9a542e91c0d"
+                "reference": "37adb8a6f4d4b27b9900d62d67bf1d54995a755c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/18dd5534280318598e8770cb7929e9a542e91c0d",
-                "reference": "18dd5534280318598e8770cb7929e9a542e91c0d",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/37adb8a6f4d4b27b9900d62d67bf1d54995a755c",
+                "reference": "37adb8a6f4d4b27b9900d62d67bf1d54995a755c",
                 "shasum": ""
             },
             "require": {
                 "firebase/php-jwt": "~2.0|~3.0",
-                "google/apiclient-services": "^0.5",
-                "google/auth": "0.9",
+                "google/apiclient-services": "^0.7",
+                "google/auth": "0.10",
                 "guzzlehttp/guzzle": "~5.2|~6.0",
                 "guzzlehttp/psr7": "^1.2",
                 "monolog/monolog": "^1.17",
@@ -663,21 +663,20 @@
             "keywords": [
                 "google"
             ],
-            "time": "2016-07-21 18:41:10"
+            "time": "2016-09-14 19:33:35"
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.5",
-            "target-dir": "Google/Service",
+            "version": "v0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client-services.git",
-                "reference": "a2d43f4c7eace8c7aa16c5ea83191344c63b4526"
+                "reference": "c07a8a9d424024f1a9fc5d62da8ed5467ed25909"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client-services/zipball/a2d43f4c7eace8c7aa16c5ea83191344c63b4526",
-                "reference": "a2d43f4c7eace8c7aa16c5ea83191344c63b4526",
+                "url": "https://api.github.com/repos/google/google-api-php-client-services/zipball/c07a8a9d424024f1a9fc5d62da8ed5467ed25909",
+                "reference": "c07a8a9d424024f1a9fc5d62da8ed5467ed25909",
                 "shasum": ""
             },
             "require": {
@@ -686,7 +685,7 @@
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "Google_Service_": ""
+                    "Google_Service_": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -698,20 +697,20 @@
             "keywords": [
                 "google"
             ],
-            "time": "2016-07-21 18:01:41"
+            "time": "2016-09-14 19:12:27"
         },
         {
             "name": "google/auth",
-            "version": "v0.9",
+            "version": "v0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-auth-library-php.git",
-                "reference": "47c3c6bece495e58381a21fed13a735bd23a51cc"
+                "reference": "760e3fbe4064c0525c22e27e5374eada3c103da8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-auth-library-php/zipball/47c3c6bece495e58381a21fed13a735bd23a51cc",
-                "reference": "47c3c6bece495e58381a21fed13a735bd23a51cc",
+                "url": "https://api.github.com/repos/google/google-auth-library-php/zipball/760e3fbe4064c0525c22e27e5374eada3c103da8",
+                "reference": "760e3fbe4064c0525c22e27e5374eada3c103da8",
                 "shasum": ""
             },
             "require": {
@@ -746,7 +745,7 @@
                 "google",
                 "oauth2"
             ],
-            "time": "2016-06-01 22:07:52"
+            "time": "2016-08-02 22:00:48"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1619,16 +1618,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v2.1.0",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "47b254ea51f1d6d5dc04b9b299e88346bf2369e3"
+                "reference": "4dd659edadffdc2143e4753df655d866dbfeedf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/47b254ea51f1d6d5dc04b9b299e88346bf2369e3",
-                "reference": "47b254ea51f1d6d5dc04b9b299e88346bf2369e3",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/4dd659edadffdc2143e4753df655d866dbfeedf0",
+                "reference": "4dd659edadffdc2143e4753df655d866dbfeedf0",
                 "shasum": ""
             },
             "require": {
@@ -1666,7 +1665,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2016-04-19 13:41:41"
+            "time": "2016-09-16 12:04:44"
         },
         {
             "name": "paragonie/random_compat",
@@ -1906,22 +1905,30 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+                "reference": "5277094ed527a1c4477177d102fe4c53551953e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/5277094ed527a1c4477177d102fe4c53551953e0",
+                "reference": "5277094ed527a1c4477177d102fe4c53551953e0",
                 "shasum": ""
             },
+            "require": {
+                "php": ">=5.3.0"
+            },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Psr\\Log\\": ""
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1935,12 +1942,13 @@
                 }
             ],
             "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
             "keywords": [
                 "log",
                 "psr",
                 "psr-3"
             ],
-            "time": "2012-12-21 11:40:51"
+            "time": "2016-09-19 16:02:08"
         },
         {
             "name": "psy/psysh",
@@ -2016,16 +2024,16 @@
         },
         {
             "name": "recca0120/laravel-tracy",
-            "version": "v1.7.4",
+            "version": "v1.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/recca0120/laravel-tracy.git",
-                "reference": "bdb76fcb54472a87ff387db27808d0d20bb8981b"
+                "reference": "93b06f3e2889ab7d404d511b844f1835d824c844"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/recca0120/laravel-tracy/zipball/bdb76fcb54472a87ff387db27808d0d20bb8981b",
-                "reference": "bdb76fcb54472a87ff387db27808d0d20bb8981b",
+                "url": "https://api.github.com/repos/recca0120/laravel-tracy/zipball/93b06f3e2889ab7d404d511b844f1835d824c844",
+                "reference": "93b06f3e2889ab7d404d511b844f1835d824c844",
                 "shasum": ""
             },
             "require": {
@@ -2035,7 +2043,7 @@
                 "illuminate/session": "~5.1",
                 "illuminate/support": "~5.1",
                 "php": ">=5.5.9",
-                "recca0120/terminal": "~1.5.12",
+                "recca0120/terminal": "~1.6",
                 "tracy/tracy": "^2.4.2"
             },
             "require-dev": {
@@ -2046,7 +2054,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5.x-dev"
+                    "dev-master": "1.7.x-dev"
                 }
             },
             "autoload": {
@@ -2079,20 +2087,20 @@
                 "tracy",
                 "webprofiler"
             ],
-            "time": "2016-09-06 23:56:35"
+            "time": "2016-09-17 07:01:29"
         },
         {
             "name": "recca0120/terminal",
-            "version": "v1.5.13",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/recca0120/laravel-terminal.git",
-                "reference": "b55888a4ac624d8dd420088c603bf74dbba00dcd"
+                "reference": "8f3fe4377d520c2942946fec86f3b6c59207b155"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/recca0120/laravel-terminal/zipball/b55888a4ac624d8dd420088c603bf74dbba00dcd",
-                "reference": "b55888a4ac624d8dd420088c603bf74dbba00dcd",
+                "url": "https://api.github.com/repos/recca0120/laravel-terminal/zipball/8f3fe4377d520c2942946fec86f3b6c59207b155",
+                "reference": "8f3fe4377d520c2942946fec86f3b6c59207b155",
                 "shasum": ""
             },
             "require": {
@@ -2142,7 +2150,7 @@
                 "web",
                 "web artisan"
             ],
-            "time": "2016-09-11 15:08:24"
+            "time": "2016-09-13 07:49:20"
         },
         {
             "name": "swiftmailer/swiftmailer",

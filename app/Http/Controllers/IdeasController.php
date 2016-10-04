@@ -26,13 +26,13 @@ class IdeasController extends Controller
     {
         if($category_id==0){
         $ideas = Idea::orderBy('created_at', 'desc')->simplepaginate(6);
-        
+
         return View::make('team-up')->with('ideas' , $ideas)->with('category_id',$category_id);
         }
         else{
         $ideas = Idea::where('category_id','=',$category_id)->orderBy('created_at', 'desc')->simplepaginate(6);
-        
-        return View::make('team-up')->with('ideas' , $ideas)->with('category_id',$category_id);   
+
+        return View::make('team-up')->with('ideas' , $ideas)->with('category_id',$category_id);
         }
     }
 
@@ -75,6 +75,13 @@ class IdeasController extends Controller
         $idea = Idea::find($id);
 
         return View::make('show')->with('idea',$idea);
+    }
+    public function leader($id)
+    {
+
+        $idea = Idea::find($id);
+
+        return View::make('teamleader')->with('idea',$idea);
     }
 
     /**

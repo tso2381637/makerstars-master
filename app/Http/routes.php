@@ -34,6 +34,7 @@ Route::get('ideas',           ['as' => 'ideas.index',         'uses' => 'IdeasCo
 Route::get('ideas/create',    ['as' => 'ideas.create', 'middleware' => 'auth' ,'uses' => 'IdeasController@create']);
 Route::post('ideas',          ['as' => 'ideas.store',   'uses' => 'IdeasController@store']);
 Route::get('ideas/{id}',      ['as' => 'ideas.show',    'uses' => 'IdeasController@show']);
+Route::get('ideas/leader/{id}',      ['as' => 'ideas.leader',    'uses' => 'IdeasController@leader']);
 Route::get('ideas/{id}/edit', ['as' => 'ideas.edit',    'uses' => 'IdeasController@edit']);
 Route::patch('ideas/{id}',    ['as' => 'ideas.update',  'uses' => 'IdeasController@update']);
 Route::delete('ideas/{id}',   ['as' => 'ideas.destroy', 'uses' => 'IdeasController@destroy']);
