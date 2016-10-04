@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="heading">
-                        <h2>About Han</h2>
+                        <h2>About {{ $idea->user->name }}</h2>
                     </div>
                     <p class="lead">Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded
                         prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.</p>
@@ -99,7 +99,7 @@
     </div>
     <!-- /.container -->
 
-    
+
 
 
 

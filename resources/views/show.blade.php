@@ -46,7 +46,7 @@
 
 
                                 <h4>坑主</h4>
-                                <p>{{ $idea->user->name }}</p>
+                                <p class="read-more"><a href="{{route('ideas.leader',['id'=>$idea->id])}}" >{{ $idea->user->name }}</a>
                                 <h4>入坑人數</h4>
                                 <br />
                                 <div class="progress">
