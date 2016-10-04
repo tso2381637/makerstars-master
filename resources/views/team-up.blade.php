@@ -52,7 +52,7 @@
                                           @endif
                                         </a></p>
                                         <p class="intro">正在尋找活動企劃專長的人。</p>
-                                        <p class="read-more"><a href="#" class="btn btn-template-main">繼續閱讀</a>
+                                        <p class="read-more"><a href="{{route('ideas.show',['id'=>$idea->id])}}" class="btn btn-template-main">繼續閱讀</a>
                                         </p>
 
                                     </div>
@@ -61,7 +61,7 @@
 
                             </div>
                             @endforeach
-                            
+
                     </div>
 
                         <ul class="pager">
@@ -213,7 +213,7 @@
                         <!-- *** MENUS AND FILTERS END *** -->
 
                     </div>
-                   
+
                     <!-- /.col-md-3 -->
 
                     <!-- *** RIGHT COLUMN END *** -->
