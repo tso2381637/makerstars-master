@@ -14,38 +14,30 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="heading">
-                        <h2>About {{ $idea->user->name }}</h2>
+                        <h2>關於 {{ $idea->user->name }}</h2>
                     </div>
-                    <p class="lead">Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded
-                        prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.</p>
+
+                    <h3>創坑等級：{{ $idea->user->epithet }}</h3>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-8">
-                    <p>Satisfied conveying an dependent contented he gentleman agreeable do be. Warrant private blushes removed an in equally totally if. Delivered dejection necessary objection do mr prevailed. Mr feeling do chiefly cordial in do.
-                        Water timed folly right aware if oh truth. Imprudence attachment him his for sympathize. Large above be to means. Dashwood do provided stronger is. But discretion frequently sir the she instrument unaffected admiration
-                        everything.</p>
-
-                    <p>Abilities forfeited situation extremely my to he resembled. Old had conviction discretion understood put principles you. Match means keeps round one her quick. She forming two comfort invited. Yet she income effect edward.
-                        Entire desire way design few. Mrs sentiments led solicitude estimating friendship fat. Meant those event is weeks state it to or. Boy but has folly charm there its. Its fact ten spot drew.</p>
-
-                    <p>So feel been kept be at gate. Be september it extensive oh concluded of certainty. In read most gate at body held it ever no. Talking justice welcome message inquiry in started of am me. Led own hearted highest visited lasting
-                        sir through compass his. Guest tiled he quick by so these trees am. It announcing alteration at surrounded comparison.</p>
+                    <p>你好，我是○○○，我對金融業有絕大的信心和熱忱，因為我擁有專業的金融知識，利用一年時間積極考去取十張證照，在財務個案分析方面也有研究，另外也具有豐富的實習經驗</p>
 
                     <div class="heading">
-                        <h3>Han's main responsibilities are</h3>
+                        <h3>個人專長</h3>
                     </div>
 
                     <ul class="ul-icons">
-                        <li><i class="fa fa-check"></i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                        <li><i class="fa fa-check"></i>Aliquam tincidunt mauris eu risus.</li>
-                        <li><i class="fa fa-check"></i>Vestibulum auctor dapibus neque.</li>
+                        <li><i class="fa fa-check"></i>c語言</li>
+                        <li><i class="fa fa-check"></i>java</li>
+                        <li><i class="fa fa-check"></i>laravel</li>
                     </ul>
                 </div>
 
                 <div class="col-md-4">
-                    <img class="img-responsive img-circle" alt="" src="img/detailsquare.jpg">
+                    <img class="img-responsive img-circle" alt="" src="{{asset('img/person-1.jpg')}}">
                 </div>
             </div>
         </section>
@@ -55,7 +47,7 @@
 
                 <div class="col-md-4">
                     <div class="heading">
-                        <h3>Get in touch with Han</h3>
+                        <h3>與我聯絡</h3>
                     </div>
 
                     <div class="social">
@@ -68,29 +60,33 @@
 
                 <div class="col-md-4">
                     <div class="heading">
-                        <h3>Han's presentations</h3>
+
+
+                        <h3>目前開的坑</h3>
                     </div>
 
                     <ul class="ul-icons">
-                        <li><i class="fa fa-check"></i><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a>
+                        <li><a href="{{route('ideas.show',['id'=>$idea->id])}} ">麵包製作</a>
                         </li>
-                        <li><i class="fa fa-check"></i><a href="#">Aliquam tincidunt mauris eu risus.</a>
+                        <li><a href="{{route('ideas.show',['id'=>$idea->id])}} ">TEST</a>
                         </li>
-                        <li><i class="fa fa-check"></i><a href="#">Vestibulum auctor dapibus neque.</a>
+                        <li><a href="{{route('ideas.show',['id'=>$idea->id])}} ">123</a>
                         </li>
                     </ul>
+
                 </div>
+
                 <div class="col-md-4">
                     <div class="heading">
-                        <h3>Han's articles</h3>
+                        <h3>目前加入的坑</h3>
                     </div>
 
                     <ul class="ul-icons">
-                        <li><i class="fa fa-check"></i><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a>
+                        <li>無
                         </li>
-                        <li><i class="fa fa-check"></i><a href="#">Aliquam tincidunt mauris eu risus.</a>
+                        <li><a href="#"></a>
                         </li>
-                        <li><i class="fa fa-check"></i><a href="#">Vestibulum auctor dapibus neque.</a>
+                        <li><a href="#"></a>
                         </li>
                     </ul>
                 </div>
