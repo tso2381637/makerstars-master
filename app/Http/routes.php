@@ -23,7 +23,7 @@ Route::get('account/resume', ['as' => 'account.resume', 'uses' => 'AccountContro
 Route::post('process', ['as' => 'Auth.process' , 'uses' => 'Auth\AuthController@process']);
 Route::get('signup', ['as' => 'signup', 'uses' => 'SignUpController@index']);
 
-// Route::get('forum', ['as' => 'forum', 'uses' => 'ForumController@index']);
+Route::get('forum', ['as' => 'forum', 'uses' => 'ForumController@index']);
 
 Route::get('team-up/{category_id}', ['as' => 'team-up', 'uses'=>"IdeasController@index"]);
 

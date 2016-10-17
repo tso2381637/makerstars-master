@@ -24,8 +24,8 @@
                                 <li class="dropdown {{ Request::is( '/') ? 'active' : '' }}">
                                     <a href="{{ route('home') }}">首頁</a>
                                 </li>
-                                <li class="dropdown use-yamm yamm-fw {{ Request::is('ideas') ? 'active' : '' }}">
-                                    <a href=" {{ route('ideas.index') }} ">群眾論坑</a>
+                                <li class="dropdown use-yamm yamm-fw {{ Request::is('forum') ? 'active' : '' }}">
+                                    <a href=" {{ route('forum') }} ">群眾論坑</a>
                                 </li>
                                 <li class="dropdown use-yamm yamm-fw {{ Request::is( 'ideas.show') ? 'active' : '' }}">
                                     <a href="{{ route('team-up',0) }}" >坑隊招募</a>
