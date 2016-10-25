@@ -12,24 +12,22 @@
              _________________________________________________________ -->
 
                     <div class="col-md-9" id="blog-listing-medium">
-                        @if ($errors->any())
-                        @foreach ($errors->all() as $error)
-                            <div class="alert alert-danger alert-dismissible" role="alert">
-                                <button type="button" class="close"
-                                        data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-
-                            <strong>錯誤！</strong>{{ $error }}</div>
-                        @endforeach
-                        @endif
 
                         {!! Form::open(['route' => 'ideas.store', 'method' => 'POST', 'name' => 'sentMessage', 'id' => 'contactForm', 'novalidate']) !!}
                             <div class="row control-group">
                                 <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    @if ($errors->has('title'))
                                     {!! Form::label('title', '標題') !!}
-                                    {!! Form::text('title', null, ['id' => 'title', 'class' => 'form-control', 'placeholder' => '標題', 'data-validation-required-message' => '請輸入文章標題', 'required']) !!}
-                                    <p class="help-block text-danger"></p>
+                                    <div class="has-error">
+                                    {!! Form::text('title', null, ['id' => 'title', 'class' => 'form-control', 'placeholder' => '標題']) !!}
+                                        <p class="help-block text-danger">
+                                            <strong>{{ $errors->first('title') }}</strong>
+                                        </p>
+                                      </div>
+                                    @else
+                                    {!! Form::label('title', '標題') !!}
+                                    {!! Form::text('title', null, ['id' => 'title', 'class' => 'form-control', 'placeholder' => '標題']) !!}
+                                    @endif
                                 </div>
                             </div>
                             <div class="row control-group">
@@ -50,8 +48,16 @@
                             <div class="row control-group">
                                 <div class="form-group col-xs-12 floating-label-form-group controls">
                                     {!! Form::label('content', '內文') !!}
-                                    {!! Form::textarea('content', null, ['id' => 'content', 'rows' => 5, 'class' => 'form-control', 'placeholder' => '內文', 'data-validation-required-message' => '請輸入文章內文', 'required']) !!}
-                                    <p class="help-block text-danger"></p>
+                                    @if($errors->has('content'))
+                                    <div class="has-error">
+                                    {!! Form::textarea('content', null, ['id' => 'content', 'rows' => 5, 'class' => 'form-control', 'placeholder' => '內文']) !!}
+                                    <p class="help-block text-danger">
+                                        <strong>{{ $errors->first('content') }}</strong>
+                                    </p>
+                                  </div>
+                                  @else
+                                  {!! Form::textarea('content', null, ['id' => 'content', 'rows' => 5, 'class' => 'form-control', 'placeholder' => '內文']) !!}
+                                  @endif
                                 </div>
                             </div>
                             <div class="row control-group">

@@ -19,6 +19,7 @@ Route::get('account', ['as' => 'account', 'uses' => 'AccountController@index']);
 Route::get('account/settings', ['as' => 'account.settings', 'uses' => 'AccountController@index']);
 Route::get('account/activity', ['as' => 'account.activity', 'uses' => 'AccountController@activity']);
 Route::get('account/wishlist', ['as' => 'account.wishlist', 'uses' => 'AccountController@wishlist']);
+Route::get('account/myteam', ['as' => 'account.myteam', 'uses' => 'AccountController@myteam']);
 Route::get('account/resume', ['as' => 'account.resume', 'uses' => 'AccountController@resume']);
 Route::post('process', ['as' => 'Auth.process' , 'uses' => 'Auth\AuthController@process']);
 Route::get('signup', ['as' => 'signup', 'uses' => 'SignUpController@index']);
@@ -30,17 +31,17 @@ Route::get('team-up/{category_id}', ['as' => 'team-up', 'uses'=>"IdeasController
 Route::get('auth/{authname}', 'Auth\AuthController@redirectToProvider');
 Route::get('auth/{authname}/callback', 'Auth\AuthController@handleProviderCallback');
 
-Route::get('ideas',           ['as' => 'ideas.index',         'uses' => 'IdeasController@index']);
-Route::get('ideas/create',    ['as' => 'ideas.create', 'middleware' => 'auth' ,'uses' => 'IdeasController@create']);
-Route::post('ideas',          ['as' => 'ideas.store',   'uses' => 'IdeasController@store']);
-Route::get('ideas/{id}',      ['as' => 'ideas.show',    'uses' => 'IdeasController@show']);
-Route::get('ideas/leader/{id}',      ['as' => 'ideas.leader',    'uses' => 'IdeasController@leader']);
-Route::get('ideas/{id}/edit', ['as' => 'ideas.edit',    'uses' => 'IdeasController@edit']);
-Route::patch('ideas/{id}',    ['as' => 'ideas.update',  'uses' => 'IdeasController@update']);
-Route::delete('ideas/{id}',   ['as' => 'ideas.destroy', 'uses' => 'IdeasController@destroy']);
+Route::get('ideas',            ['as' => 'ideas.index',         'uses' => 'IdeasController@index']);
+Route::get('ideas/create',     ['as' => 'ideas.create', 'middleware' => 'auth' ,'uses' => 'IdeasController@create']);
+Route::post('ideas',           ['as' => 'ideas.store',   'uses' => 'IdeasController@store']);
+Route::get('ideas/{id}',       ['as' => 'ideas.show',    'uses' => 'IdeasController@show']);
+Route::get('ideas/leader/{id}',['as' => 'ideas.leader',  'uses' => 'IdeasController@leader']);
+Route::get('ideas/{id}/edit',  ['as' => 'ideas.edit',    'uses' => 'IdeasController@edit']);
+Route::patch('ideas/{id}',     ['as' => 'ideas.update',  'uses' => 'IdeasController@update']);
+Route::delete('ideas/{id}',    ['as' => 'ideas.destroy', 'uses' => 'IdeasController@destroy']);
 
-
-
+Route::get('team/create',        ['as' =>'team.create',  'middleware' => 'auth' ,'uses' => 'TeamController@create']);
+Route::post('team',        ['as' =>'team.store',  'middleware' => 'auth' ,'uses' => 'TeamController@store']);
 // 使用「社群認證」需再裝 Laravel Socialite
 // Socialite 目前支援 Facebook、Twitter、LinkedIn、Google、GitHub 跟 Bitbucket。
 // 詳見：https://laravel.tw/docs/5.1/authentication#social-authentication

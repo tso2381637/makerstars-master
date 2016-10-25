@@ -19,6 +19,9 @@
                                     <li class="{{ Request::is( 'account/activity') ? 'active' : '' }}">
                                         <a href="{{ route('account.activity') }}"><i class="fa fa-list"></i> 活動記錄</a>
                                     </li>
+                                    <li class="{{ Request::is( 'account/myteam') ? 'active' : '' }}">
+                                        <a href="{{ route('account.myteam') }}"><i class="fa fa-star"></i> 我的團隊</a>
+                                    </li>
                                     <li class="{{ Request::is( 'account/wishlist') ? 'active' : '' }}">
                                         <a href=" {{ route('account.wishlist') }} "><i class="fa fa-heart"></i> 我的收藏</a>
                                     </li>

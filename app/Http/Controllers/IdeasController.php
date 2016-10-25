@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Http\Requests\IdeaRequest;
 
 use App\Idea;
 use View;
@@ -53,12 +54,12 @@ class IdeasController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(requests\IdeaRequest $request)
     {
         $idea = Idea::create($request->except('_token'));
         $idea->user_id=Auth::User()->id;
         $idea -> save();
-        //dd($Post);
+        //dd($request);
 
         return redirect()->route('team-up',0);
     }
@@ -71,7 +72,6 @@ class IdeasController extends Controller
      */
     public function show($id)
     {
-
         $idea = Idea::find($id);
 
         return View::make('show')->with('idea',$idea);
