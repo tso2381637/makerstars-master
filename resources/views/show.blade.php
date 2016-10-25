@@ -25,16 +25,16 @@
                         <div class="col-sm-8">
                             <div class="project owl-carousel">
                                 <div class="item">
-                                    <img src="img/main-slider1.jpg" alt="" class="img-responsive">
+                                    <img src="{{asset('img/main-slider1.jpg')}}" alt="" class="img-responsive">
                                 </div>
                                 <div class="item">
-                                    <img class="img-responsive" src="img/main-slider2.jpg" alt="">
+                                    <img class="{{asset('img/main-slider2.jpg')}}" src="img/main-slider2.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img class="img-responsive" src="img/main-slider3.jpg" alt="">
+                                    <img class="{{asset('img/main-slider3.jpg')}}" src="img/main-slider3.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img class="img-responsive" src="img/main-slider4.jpg" alt="">
+                                    <img class="{{asset('img/main-slider4.jpg')}}" src="img/main-slider4.jpg" alt="">
                                 </div>
                             </div>
                             <!-- /.project owl-slider -->
@@ -90,7 +90,7 @@
                         <div class="col-sm-6 col-md-3">
                             <div class="box-image">
                                 <div class="image">
-                                    <img src="img/portfolio-1.jpg" alt="" class="img-responsive">
+                                    <img src="{{asset('img/portfolio-1.jpg')}}" alt="" class="img-responsive">
                                 </div>
                                 <div class="bg"></div>
                                 <div class="name">
@@ -110,7 +110,7 @@
                         <div class="col-sm-6 col-md-3">
                             <div class="box-image">
                                 <div class="image">
-                                    <img src="img/portfolio-2.jpg" alt="" class="img-responsive">
+                                    <img src="{{asset('img/portfolio-1.jpg')}}" alt="" class="img-responsive">
                                 </div>
                                 <div class="bg"></div>
                                 <div class="name">
@@ -130,7 +130,7 @@
                         <div class="col-sm-6 col-md-3">
                             <div class="box-image">
                                 <div class="image">
-                                    <img src="img/portfolio-3.jpg" alt="" class="img-responsive">
+                                    <img src="{{asset('img/portfolio-1.jpg')}}" alt="" class="img-responsive">
                                 </div>
                                 <div class="bg"></div>
                                 <div class="name">
@@ -145,24 +145,7 @@
                             </div>
                             <!-- /.box-image -->
 
-                         <div class="col-sm-6 col-md-3">
-                            <div class="box-image">
-                                <div class="image">
-                                    <img src="img/portfolio-4.jpg" alt="" class="img-responsive">
-                                </div>
-                                <div class="bg"></div>
-                                <div class="name">
-                                    <h3><a href="portfolio-detail.html">Portfolio box-image</a></h3>
-                                </div>
-                                <div class="text">
-                                    <p class="buttons">
-                                        <a href="portfolio-detail.html" class="btn btn-template-transparent-primary">View</a>
-                                        <a href="#" class="btn btn-template-transparent-primary">Website</a>
-                                    </p>
-                                </div>
-                            </div>
-                            </div>
-
+                         
 
                             <!-- /.box-image -->
                         </div>
