@@ -3,7 +3,7 @@
 @section('title', '坑隊招募')
 
 @section('content')
-        @include('layouts.partials.heading-breadcrumbs')
+@include('layouts.partials.heading-breadcrumbs')
 
         <div id="content">
             <div class="container">

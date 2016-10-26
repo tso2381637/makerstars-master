@@ -84,6 +84,14 @@ class IdeasController extends Controller
         return View::make('teamleader')->with('idea',$idea);
     }
 
+    public function member($id)
+    {
+
+        $idea = Idea::find($id);
+
+        return View::make('member')->with('idea',$idea);
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
