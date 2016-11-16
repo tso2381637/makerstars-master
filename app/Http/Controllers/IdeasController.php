@@ -91,6 +91,13 @@ class IdeasController extends Controller
 
         return View::make('member')->with('idea',$idea);
     }
+    public function forumview($id)
+    {
+
+        $idea = Idea::find($id);
+
+        return View::make('forumview')->with('idea',$idea);
+    }
 
     /**
      * Show the form for editing the specified resource.

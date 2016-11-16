@@ -32,12 +32,8 @@
                             </a>
                         </div>
                         <h3><a href="team-member.html">Han Solo</a></h3>
-                        <p class="role">Founder</p>
-                        <div class="social">
-                            <a href="#" class="external facebook" data-animate-hover="pulse"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="external gplus" data-animate-hover="pulse"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="email" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+                        <p class="role">坑主</p>
+                        <div class="read-more"><a href="{{route('ideas.show',['id'=>$idea->id])}}" class="btn btn-template-main">悄悄話</a>
                         </div>
                         <div class="text">
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
@@ -53,13 +49,9 @@
                             </a>
                         </div>
                         <h3><a href="team-member.html">Luke Skywalker</a></h3>
-                        <p class="role">CTO</p>
+                        <p class="role">美術設計</p>
 
-                        <div class="social">
-                            <a href="#" class="external facebook" data-animate-hover="pulse"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="external gplus" data-animate-hover="pulse"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="email" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+                        <div class="read-more"><a href="{{route('ideas.show',['id'=>$idea->id])}}" class="btn btn-template-main">悄悄話</a>
                         </div>
                         <div class="text">
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
@@ -75,12 +67,8 @@
                             </a>
                         </div>
                         <h3><a href="team-member.html">Princess Leia</a></h3>
-                        <p class="role">Team Leader</p>
-                        <div class="social">
-                            <a href="#" class="external facebook" data-animate-hover="pulse"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="external gplus" data-animate-hover="pulse"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="email" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+                        <p class="role">程式設計</p>
+                        <div class="read-more"><a href="{{route('ideas.show',['id'=>$idea->id])}}" class="btn btn-template-main">悄悄話</a>
                         </div>
                         <div class="text">
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
@@ -96,12 +84,10 @@
                             </a>
                         </div>
                         <h3><a href="team-member.html">Jabba Hut</a></h3>
-                        <p class="role">Lead Developer</p>
-                        <div class="social">
-                            <a href="#" class="external facebook" data-animate-hover="pulse"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="external gplus" data-animate-hover="pulse"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="email" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+                        <p class="role">硬體設計</p>
+
+                          <div class="read-more"><a href="{{route('ideas.show',['id'=>$idea->id])}}" class="btn btn-template-main">悄悄話</a>
+
                         </div>
                         <div class="text">
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
@@ -141,7 +127,7 @@
                     <div class="team-member">
                         <div class="image">
                             <a href="team-member.html">
-                                <img src={{asset('img/person-3.jpg')}} alt="" class="img-responsive img-circle">
+                                <img src={{asset('img/person-4.jpg')}} alt="" class="img-responsive img-circle">
                             </a>
                         </div>
                         <h3><a href="team-member.html">Princess Leia</a></h3>
@@ -165,7 +151,7 @@
                     <div class="team-member">
                         <div class="image">
                             <a href="team-member.html">
-                                <img src={{asset('img/person-2.jpg')}} alt="" class="img-responsive img-circle">
+                                <img src={{asset('img/person-1.jpg')}} alt="" class="img-responsive img-circle">
                             </a>
                         </div>
                         <h3><a href="team-member.html">Franz Kafka</a></h3>
@@ -177,7 +163,7 @@
                     <div class="team-member">
                         <div class="image">
                             <a href="team-member.html">
-                                <img src={{asset('img/person-3.jpg')}} alt="" class="img-responsive img-circle">
+                                <img src={{asset('img/person-1.jpg')}} alt="" class="img-responsive img-circle">
                             </a>
                         </div>
                         <h3><a href="team-member.html">Gregor Samsa</a></h3>
@@ -193,7 +179,7 @@
     </div>
     <!-- /.container -->
 
-    <section class="bar background-gray no-mb">
+  <!--  <section class="bar background-gray no-mb">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -202,12 +188,12 @@
                     </div>
 
                     <p class="lead">We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us.</p>
-
+-->
 
                     <!-- *** TESTIMONIALS CAROUSEL ***
 _________________________________________________________ -->
 
-                    <ul class="owl-carousel testimonials same-height-row">
+            <!--        <ul class="owl-carousel testimonials same-height-row">
                         <li class="item">
                             <div class="testimonial same-height-always">
                                 <div class="text">
@@ -218,7 +204,7 @@ _________________________________________________________ -->
                                     <div class="icon"><i class="fa fa-quote-left"></i>
                                     </div>
                                     <div class="name-picture">
-                                        <img class="" alt="" src="img/person-1.jpg">
+                                        <img class="" alt="" src={{asset('img/person-1.jpg')}} >
                                         <h5>John McIntyre</h5>
                                         <p>CEO, TransTech</p>
                                     </div>
@@ -235,7 +221,7 @@ _________________________________________________________ -->
                                     <div class="icon"><i class="fa fa-quote-left"></i>
                                     </div>
                                     <div class="name-picture">
-                                        <img class="" alt="" src="img/person-2.jpg">
+                                        <img class="" alt="" src={{asset('img/person-2.jpg')}} >
                                         <h5>John McIntyre</h5>
                                         <p>CEO, TransTech</p>
                                     </div>
@@ -254,7 +240,7 @@ _________________________________________________________ -->
                                     <div class="icon"><i class="fa fa-quote-left"></i>
                                     </div>
                                     <div class="name-picture">
-                                        <img class="" alt="" src="img/person-3.png">
+                                        <img class="" alt="" src={{asset('img/person-2.jpg')}} >
                                         <h5>John McIntyre</h5>
                                         <p>CEO, TransTech</p>
                                     </div>
@@ -272,7 +258,7 @@ _________________________________________________________ -->
                                     <div class="icon"><i class="fa fa-quote-left"></i>
                                     </div>
                                     <div class="name-picture">
-                                        <img class="" alt="" src="img/person-4.jpg">
+                                        <img class="" alt="" src={{asset('img/person-4.jpg')}} >
                                         <h5>John McIntyre</h5>
                                         <p>CEO, TransTech</p>
                                     </div>
@@ -291,7 +277,7 @@ _________________________________________________________ -->
                                     <div class="icon"><i class="fa fa-quote-left"></i>
                                     </div>
                                     <div class="name-picture">
-                                        <img class="" alt="" src="img/person-4.jpg">
+                                        <img class="" alt="" src={{asset('img/person-4.jpg')}} >
                                         <h5>John McIntyre</h5>
                                         <p>CEO, TransTech</p>
                                     </div>
@@ -299,6 +285,7 @@ _________________________________________________________ -->
                             </div>
                         </li>
                     </ul>
+                  -->
                     <!-- /.owl-carousel -->
 
                     <!-- *** TESTIMONIALS CAROUSEL END *** -->
@@ -315,16 +302,7 @@ _________________________________________________________ -->
 <!-- *** GET IT ***
 _________________________________________________________ -->
 
-<div id="get-it">
-    <div class="container">
-        <div class="col-md-8 col-sm-12">
-            <h3>Do you want cool website like this one?</h3>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <a href="#" class="btn btn-template-transparent-primary">Buy this template now</a>
-        </div>
-    </div>
-</div>
+
 
 
 <!-- *** GET IT END *** -->
