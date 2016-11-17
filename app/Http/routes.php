@@ -1,5 +1,5 @@
 <?
-
+use Illuminate\Support\Facades\Redis;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -10,6 +10,19 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+
+Route::get('test',function(){
+  $data = [
+      'events' => 'event1',
+      'data'=>[
+        'name' => 'Eason'
+      ]
+  ];
+
+  Redis::publish('test-channel',json_encode($data));
+
+  return view('welcome');
+});
 
 Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 

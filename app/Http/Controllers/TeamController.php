@@ -12,8 +12,13 @@ class TeamController extends Controller
     {
       return view('team.team-create');
     }
-    public function store()
+    public function store(requests\TeamStoreRequest $request)
     {
+      this.validate($request,[
+        'teamname' => 'required',
+        'member' => 'required',
+        'introduce' => 'required'
+      ]);
 
     }
 }

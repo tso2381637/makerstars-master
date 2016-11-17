@@ -1,10 +1,23 @@
 {
   "private": true,
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "gulp": "^3.9.1",
+    "vue": "^2.0.6",
+    "vueify": "^8.7.0"
   },
   "dependencies": {
+    "bootstrap-sass": "^3.0.0",
+    "ioredis": "^2.4.0",
     "laravel-elixir": "^5.0.0",
-    "bootstrap-sass": "^3.0.0"
+    "redis": "^2.6.3",
+    "socket.io": "^1.5.1",
+    "vue": "^2.0.6",
+    "vueify": "^8.5.4"
+  },
+  "browserify": {
+    "transform": [
+      "vueify"
+    ]
   }
 }

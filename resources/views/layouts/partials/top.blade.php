@@ -22,9 +22,17 @@
 
                             <div class="login">
                             @if (Auth::guest())
+                            <div>
                                 <a href="#" data-toggle="modal" data-target="#login-modal"><i class="fa fa-sign-in"></i> <span class="hidden-xs text-uppercase">登入</span></a>
                                 <a href="{{route('signup')}}"><i class="fa fa-user"></i> <span class="hidden-xs text-uppercase">註冊</span></a>
                             @else
+                            <div class="dropdown" style="display:inline;">
+                                <a data-toggle="dropdown" id="notify" href="#"><i class="fa fa-flag"></i></a>
+                                <ul class="dropdown-menu" style="padding-top:0;margin-top:0;border-top:0;border-radius:5px">
+                                  <span class="col-xs-12" style="background:#38a7bb;border-radius:5px">通知</span>
+
+                                </ul>
+                              </div>
                                 <a href="{{ url('account') }}"><i class="fa fa-cog"></i> <span class="hidden-xs text-uppercase">我的帳戶</span></a>
                                 <a href="{{ url('logout') }}"><i class="fa fa-sign-out"></i> <span class="hidden-xs text-uppercase">登出</span></a>
                             @endif
@@ -34,3 +42,23 @@
                     </div>
                 </div>
             </div>
+            <template>
+              <a href="#"><li style="color:black">
+                @{{ notification }}
+              </li></a>
+            </template>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.6/vue.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.5.1/socket.io.min.js"></script>
+            <script>
+            var socket = io('localhost:3000');
+            Vue.component('Vue-Dropdown',{
+              template: '#dropdown-template',
+              props: ['notification'],
+              methods:{
+                mounted:function(){socket.on('test-channel:event1',function(data){
+                this.users.push(data.name);
+              }.bind(this));
+              }
+            }
+            });
+            </script>

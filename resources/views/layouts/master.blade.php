@@ -268,8 +268,8 @@ _________________________________________________________ -->
     <script src="{{ URL::asset('/') }}js/jquery.counterup.min.js"></script>
     <script src="{{ URL::asset('/') }}js/jquery.parallax-1.1.3.js"></script>
     <script src="{{ URL::asset('/') }}js/front.js"></script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.6/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.5.1/socket.io.min.js"></script>
 
     <!-- owl carousel -->
     <script src="{{ URL::asset('/') }}js/owl.carousel.min.js"></script>
