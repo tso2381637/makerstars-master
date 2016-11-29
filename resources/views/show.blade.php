@@ -47,13 +47,7 @@
 
                                 <h4>坑主</h4>
                                 <p class="read-more"><a href="{{route('ideas.leader',['id'=>$idea->id])}}" >{{ $idea->user->name }}</a>
-                                <h4>入坑人數</h4>
-                                <br />
-                                <div class="progress">
-                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-                                <span class="sr-only">45% Complete</span>
-                                </div>
-                                </div>
+                                <h4>入坑人數</h4>     
                                 <p>目前３人</p>
                                 <h4>需要人才</h4>
                                 <p>PHP, HipHop, Break-dance</p>
@@ -145,7 +139,7 @@
                             </div>
                             <!-- /.box-image -->
 
-                         
+
 
                             <!-- /.box-image -->
                         </div>

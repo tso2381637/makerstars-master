@@ -20,21 +20,23 @@ _________________________________________________________ -->
 
                 <div class="panel-body">
                     <ul class="nav nav-pills nav-stacked">
-                        <li class="active"><a href="template-accordions.html">Accordions</a>
+                        <li class="active"><a href="template-accordions.html">所有領域</a>
                         </li>
-                        <li><a href="template-alerts.html">Alerts</a>
+                        <li><a href="template-alerts.html">人文及藝術領域</a>
                         </li>
-                        <li><a href="template-buttons.html">Buttons</a>
+                        <li><a href="template-buttons.html">工程及製造領域</a>
                         </li>
-                        <li><a href="template-content-boxes.html">Content boxes</a>
+                        <li><a href="template-content-boxes.html">服務領域</a>
                         </li>
-                        <li><a href="template-blocks.html">Horizontal blocks</a>
+                        <li><a href="template-blocks.html">商業及法律領域</a>
                         </li>
-                        <li><a href="template-pagination.html">Pagination</a>
+                        <li><a href="template-pagination.html">科學領域</a>
                         </li>
-                        <li><a href="template-tabs.html">Tabs</a>
+                        <li><a href="template-tabs.html">教育領域</a>
                         </li>
-                        <li><a href="template-typography.html">Typography</a>
+                        <li><a href="template-typography.html">農學領域</a>
+                        </li>
+                        <li><a href="template-typography.html">醫藥及社福領域</a>
                         </li>
                 </div>
             </div>

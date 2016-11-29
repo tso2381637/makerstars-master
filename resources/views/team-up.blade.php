@@ -1,4 +1,4 @@
-@extends('layouts.master')
+ @extends('layouts.master')
 
 @section('title', '坑隊招募')
 
@@ -25,6 +25,7 @@
                                         <div class="text">
                                             <p class="buttons">
                                                 <a href="#" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> 我想加入</a>
+
                                             </p>
                                         </div>
                                     </div>
@@ -52,8 +53,12 @@
                                           @endif
                                         </a></p>
                                         <p class="intro">正在尋找活動企劃專長的人。</p>
-                                        <p class="read-more"><a href="{{route('ideas.show',['id'=>$idea->id])}}" class="btn btn-template-main">繼續閱讀</a>
-                                        </p>
+                                        <table align=center>
+                                          <td><div class="read-more"><a href="{{route('ideas.show',['id'=>$idea->id])}}" class="btn btn-template-main">繼續閱讀</a> </div></td>
+                                          <td><div><a class="btn btn-template-main">收藏此坑</a></div></td>
+                                          </table>
+
+
 
                                     </div>
                                 </div>
