@@ -31,8 +31,8 @@ class User extends Authenticatable
         'remember_token',
     ];
 
-    public function ideas(){
+    public function ideas()
+    {
         return $this->hasMany(Idea::class);
     }
-
 }

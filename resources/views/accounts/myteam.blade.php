@@ -28,21 +28,26 @@
                            </tr>
                        </thead>
                        <tbody>
-                          <!-- <tr>
-                               <th>史上最強團隊沒有之一</th>
-                               <td>40343130</td>
-                               <td>3/6</td>
-                               <td>
-                                  <div class="progress" style="margin-bottom: -5px;  background-color: #d6d6d6;">
-                                 <div class="progress-bar progress-bar-striped active" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:60%;">
-                                   60%
-                                 </div>
-                               </div>
-                               </td>
-                               <td><a href="customer-order.html" class="btn btn-template-main btn-sm">View</a>
-                               </td>
-                           </tr>-->
+                           @if($teams->isEmpty())
                            <th><p>還沒有團隊嗎，點此<a href="{{ route('team.create')}}">建立</a></p></th>
+                           @else
+                           @foreach($teams as $team)
+                           <tr>
+                                <th>{{ $team->name }}</th>
+                                <td>{{ $team->user->name }}</td>
+                                <td>{{ $team->teamup->count() }}</td>
+                                <td>
+                                   <div class="progress" style="margin-bottom: -5px;  background-color: #d6d6d6;">
+                                  <div class="progress-bar progress-bar-striped active" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:60%;">
+                                    60%
+                                  </div>
+                                </div>
+                                </td>
+                                <td align="right"><a href="" class="btn btn-template-main btn-sm">View</a>
+                                </td>
+                            </tr>
+                            @endforeach
+                           @endif
                        </tbody>
                    </table>
                </div>

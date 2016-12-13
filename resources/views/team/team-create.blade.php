@@ -9,13 +9,18 @@
             <div class="container">
                 <div class="row">
                 <div class="col-md-9">
-                    <form class="form-horizontal" id="form">
-                    <div class="form-group">
-                      <label for="teamname">團隊名稱</label>
-                      <input type="text" class="form-control" id="teamname" placeholder="請輸入你的團隊名稱">
-                      <p v-show="" class="help-block">Help text here.</p>
+                    <form class="form-horizontal" role="form" action="{{ route('team.store') }}"method="POST">
+                      {!! csrf_field() !!}
+                    <div class="form-group {{ $errors->has('name') ? 'has-error' : ''}}">
+                      <label for="name">團隊名稱</label>
+                      <input type="text"  class="form-control" name="name" placeholder="請輸入你的團隊名稱">
+                      @if ($errors->has('name'))
+                          <span class="help-block">
+                              <strong>{{ $errors->first('name') }}</strong>
+                          </span>
+                      @endif
                     </div>
-                    <div class="form-group">
+                     <!-- <div class="form-group">
                       <label for="member" >新增成員</label>
                       <div class="input-group">
                       <input type="text" class="form-control" id="member" placeholder="請輸入你的成員帳號">
@@ -24,15 +29,19 @@
                       </span>
                     </div>
                       <p class="help-block">Help text here.</p>
-                    </div>
-                    <div class="form-group">
-                      <label for="introduce">團隊介紹</label>
-                      <textarea rows="5" class="form-control" id="introduce" placeholder="團隊介紹"></textarea>
-                      <p class="help-block">Help text here.</p>
+                    </div> -->
+                    <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
+                      <label for="introduction">團隊介紹</label>
+                      <textarea rows="5" class="form-control" name="introduction" placeholder="團隊介紹"></textarea>
+                      @if ($errors->has('introduction'))
+                          <span class="help-block">
+                              <strong>{{ $errors->first('introduction') }}</strong>
+                          </span>
+                      @endif
                     </div>
                     <div class="form-group">
                       <label for="submit"></label>
-                      <button type="submit" action="route('team.store')"class="btn btn-primary">創建</button>
+                      <button type="submit" class="btn btn-primary">創建</button>
                     </div>
                   </form>
                 </div>
@@ -61,13 +70,3 @@
         </div>
         <!-- /#content -->
 @endsection
-<script>
-new Vue({
-  el:'#form',
-
-  data:{
-    error:$error
-  }
-
-})
-</script>

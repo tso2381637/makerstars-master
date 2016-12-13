@@ -24,9 +24,15 @@ class TeamStoreRequest extends Request
     public function rules()
     {
         return [
-            'teamname' => 'required',
-            'member' => 'required',
-            'introduce' => 'required'
+            'name' => 'required',
+            'introduction' => 'required',
         ];
+    }
+    public function messages()
+    {
+      return [
+        'name.required' => '請輸入團隊名稱',
+        'introduction.required' => '請輸入團隊介紹'
+      ];
     }
 }

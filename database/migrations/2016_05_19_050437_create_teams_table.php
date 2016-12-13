@@ -15,12 +15,13 @@ class CreateTeamsTable extends Migration
         Schema::create('teams', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users');
+            //$table->foreign('user_id')->references('id')->on('users');
             $table->integer('idea_id')->unsigned()->nullable();
-            $table->foreign('idea_id')->references('id')->on('ideas');
+            //$table->foreign('idea_id')->references('id')->on('ideas');
             $table->string('name', 255)->nullable();
             $table->string('introduction', 65535)->nullable();
-            $table->timestamp('created_at')->nullable();
+            $table->timestamp('created_at');
+            $table->timestamp('updated_at');
             $table->boolean('enabled')->default(true);
         });
     }

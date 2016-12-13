@@ -53,6 +53,7 @@
                                 <p>PHP, HipHop, Break-dance</p>
                                 <h4>開坑期限</h4>
                                 <p>10/2013 - 06/2014</p>
+                                <button class="btn btn-template-main" ><a href="{{ route('team.join',['$team_id' => $idea->id ]) }}">我要加入</a></button>
                             </div>
                         </div>
 

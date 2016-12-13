@@ -55,8 +55,9 @@ Route::get('ideas/{id}/edit',  ['as' => 'ideas.edit',    'uses' => 'IdeasControl
 Route::patch('ideas/{id}',     ['as' => 'ideas.update',  'uses' => 'IdeasController@update']);
 Route::delete('ideas/{id}',    ['as' => 'ideas.destroy', 'uses' => 'IdeasController@destroy']);
 
-Route::get('team/create',        ['as' =>'team.create',  'middleware' => 'auth' ,'uses' => 'TeamController@create']);
-Route::post('team',        ['as' =>'team.store',  'middleware' => 'auth' ,'uses' => 'TeamController@store']);
+Route::get('team/create',      ['as' =>'team.create',  'middleware' => 'auth' ,'uses' => 'TeamController@create']);
+Route::post('team',            ['as' =>'team.store' ,'uses' => 'TeamController@store']);
+Route::get('team/join/{team_id}'  ,      ['as' => 'team.join' ,'uses' => 'TeamController@join']);
 // 使用「社群認證」需再裝 Laravel Socialite
 // Socialite 目前支援 Facebook、Twitter、LinkedIn、Google、GitHub 跟 Bitbucket。
 // 詳見：https://laravel.tw/docs/5.1/authentication#social-authentication

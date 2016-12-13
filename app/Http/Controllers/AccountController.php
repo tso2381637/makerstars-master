@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Auth;
 use App\Http\Requests;
-
+use App\Team;
 class AccountController extends Controller
 {
 	/**
@@ -44,6 +44,7 @@ class AccountController extends Controller
     }
 		public function myteam()
 		{
-				return view('accounts.myteam');
+				$teams = Team::where('user_id',Auth::User()->id)->get();
+				return view('accounts.myteam')->with('teams' , $teams);
 		}
 }

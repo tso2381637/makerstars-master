@@ -3,18 +3,25 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\User;
 
 class Team extends Model
 {
     protected $table = 'teams';
 
-    potected $fillable =[
+    protected $fillable =[
+      'user_id',
       'name',
       'introduction',
+      'enabled'
     ];
 
     public function user()
     {
-      return $this->hasMany(User::class);
+        return $this->belongsTo(User::class);
+    }
+    public function teamup()
+    {
+        return $this->hasMany(Teamup::class);
     }
 }
