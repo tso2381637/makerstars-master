@@ -28,7 +28,11 @@
                                 <h3 class="text-uppercase">個人照片</h3>
                             </div>
                             <img src="img/info/default.jpeg"/>
-                            <input type="file" />
+                            <fohomesteadrm methods="POST" action="{{ route('account.avatar_update') }}">
+                                {!! csrf_field() !!}
+                                <input type="file" name="avatar"/>
+                                <input type="submit"/>
+                            </fohomesteadrm>
                             <div class="heading">
                                 <h3 class="text-uppercase">個人簡介</h3>
                             </div>

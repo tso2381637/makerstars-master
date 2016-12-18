@@ -38,6 +38,19 @@ class AccountController extends Controller
     	return view('accounts.wishlist');
     }
 
+    public function avatar_update(Request $request)
+    {
+        if($request->hasFile('avatar')){
+            $avatar = $request->file('avatar');
+            $filename = time() . '.' . $avatar->getClientOriginalExtension();
+            Image::make($avatar)->resize(300,300)->save( public_path('/img/info/').$filename);
+
+            $user = Auth::user();
+            $user->avatar=$filename;
+            $user->save();
+        }
+
+    }
     public function resume()
     {
         return view('accounts.resume');

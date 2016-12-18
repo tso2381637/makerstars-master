@@ -30,6 +30,7 @@ Route::get('about', ['as' => 'about', 'uses' => 'AboutController@index']);
 
 Route::get('account', ['as' => 'account', 'uses' => 'AccountController@index']);
 Route::get('account/settings', ['as' => 'account.settings', 'uses' => 'AccountController@index']);
+Route::post('account/avatar_update',['as' => 'account.avatar_update', 'uses' => 'AccountController@avatar_update']);
 Route::get('account/activity', ['as' => 'account.activity', 'uses' => 'AccountController@activity']);
 Route::get('account/wishlist', ['as' => 'account.wishlist', 'uses' => 'AccountController@wishlist']);
 Route::get('account/myteam', ['as' => 'account.myteam', 'uses' => 'AccountController@myteam']);
