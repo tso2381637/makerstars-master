@@ -1,4 +1,4 @@
-<?
+<?php
 use Illuminate\Support\Facades\Redis;
 /*
 |--------------------------------------------------------------------------
@@ -11,18 +11,18 @@ use Illuminate\Support\Facades\Redis;
 |
 */
 
-Route::get('test',function(){
-  $data = [
-      'events' => 'event1',
-      'data'=>[
-        'name' => 'Eason'
-      ]
-  ];
-
-  Redis::publish('test-channel',json_encode($data));
-
-  return view('welcome');
-});
+//Route::get('test',function(){
+//  $data = [
+//      'events' => 'event1',
+//      'data'=>[
+//        'name' => 'Eason'
+//      ]
+//  ];
+//
+//  Redis::publish('test-channel',json_encode($data));
+//
+//  return view('welcome');
+//});
 
 Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 
