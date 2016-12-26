@@ -66,8 +66,8 @@ Route::get('team/join/{team_id}'  ,      ['as' => 'team.join' ,'uses' => 'TeamCo
 
 // 認證路由...
 //Route::get('auth/login', 'Auth\AuthController@getLogin');
-Route::post('auth/login', 'Auth\AuthController@postLogin');
-Route::get('auth/logout', 'Auth\AuthController@getLogout');
+Route::post('auth/login', 'Auth\LoginController@login');
+Route::get('/logout', 'Auth\LoginController@logout');
 
 // 註冊路由...
 // Route::get('auth/register', 'Auth\AuthController@getRegister');
