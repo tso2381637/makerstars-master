@@ -27,12 +27,12 @@
                             <div class="heading">
                                 <h3 class="text-uppercase">個人照片</h3>
                             </div>
-                            <img src="img/info/default.jpeg"/>
-                            <fohomesteadrm methods="POST" action="{{ route('account.avatar_update') }}">
-                                {!! csrf_field() !!}
-                                <input type="file" name="avatar"/>
-                                <input type="submit"/>
-                            </fohomesteadrm>
+                            <img src="img/info/{{ Auth::user()->avatar }}"/>
+                            {!! Form::open(['route' => 'avatar.update', 'method' => 'post', 'file'=>true,'enctype'=>'multipart/form-data']) !!}
+                            {!!  Form::file('avatar') !!}
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
+                            <input type="submit" class="btn btn-primary" style="inline"/>
+                            {!! Form::close() !!}
                             <div class="heading">
                                 <h3 class="text-uppercase">個人簡介</h3>
                             </div>

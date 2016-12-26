@@ -11,14 +11,11 @@
           @{{ user }}
         </li>
       </ul>
-      <pre>
-        @{{ $data }}
-      </pre>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.6/vue.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.5.1/socket.io.min.js"></script>
       <script>
-      var socket = io('localhost:3000');
+      var socket = io('http://192.168.10.10:3000');
       new Vue({
         el:'#vue_body',
 

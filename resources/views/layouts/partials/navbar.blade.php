@@ -32,7 +32,7 @@
                                 </li>
                                 @if(Auth::check())
                                 <li class="dropdown use-yamm yamm-fw {{ Request::is( 'team-up') ? 'active' : '' }}">
-                                    <a href="{{ route('ideas.create') }}" >我要創坑</a>
+                                    <a href="{{ route('team.create') }}" >開創團隊</a>
                                 </li>
                                 @endif
                                 <!-- ========== FULL WIDTH MEGAMENU ================== -->

@@ -114,9 +114,9 @@
                                         <input type="text" class="form-control" placeholder="輸入關鍵字搜尋">
                                         <span class="input-group-btn">
 
-        <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
 
-    </span>
+                                        </span>
                                     </div>
                                 </form>
                             </div>

@@ -257,7 +257,7 @@ _________________________________________________________ -->
 
     <!-- #### JAVASCRIPT FILES ### -->
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
     </script>
@@ -268,12 +268,12 @@ _________________________________________________________ -->
     <script src="{{ URL::asset('/') }}js/jquery.counterup.min.js"></script>
     <script src="{{ URL::asset('/') }}js/jquery.parallax-1.1.3.js"></script>
     <script src="{{ URL::asset('/') }}js/front.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.6/vue.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.5.1/socket.io.min.js"></script>
 
     <!-- owl carousel -->
     <script src="{{ URL::asset('/') }}js/owl.carousel.min.js"></script>
-
+    @yield('script')
 
 
 </body>

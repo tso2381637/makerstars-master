@@ -12,7 +12,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
       \App\Idea::unguard();
-
+      $this->call(UsersTableSeeder::class);
       $this->call(IdeasTableSeeder::class);
 
       \App\Idea::reguard();

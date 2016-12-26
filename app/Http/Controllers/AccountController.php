@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use App\Http\Requests;
+use Image;
 use App\Team;
 class AccountController extends Controller
 {
@@ -40,16 +41,15 @@ class AccountController extends Controller
 
     public function avatar_update(Request $request)
     {
-        if($request->hasFile('avatar')){
+        if($request->hasFile('avatar')) {
             $avatar = $request->file('avatar');
             $filename = time() . '.' . $avatar->getClientOriginalExtension();
-            Image::make($avatar)->resize(300,300)->save( public_path('/img/info/').$filename);
-
+            Image::make($avatar)->resize(150,150)->save(public_path('img/info/').$filename);
             $user = Auth::user();
-            $user->avatar=$filename;
+            $user->avatar =  $filename;
             $user->save();
         }
-
+        return back();
     }
     public function resume()
     {

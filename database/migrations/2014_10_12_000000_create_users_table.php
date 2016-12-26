@@ -17,7 +17,7 @@ class CreateUsersTable extends Migration
             $table->string('google_id', 255)->nullable();
             $table->string('name', 50);
             $table->string('email', 100)->unique();
-            $table->string('avatar', 255)->nullable();
+            $table->string('avatar')->default('default.jpeg');
             $table->string('password', 255);
             $table->boolean('enabled')->default(true);
             $table->timestamp('disabled_on')->nullable();
