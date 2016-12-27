@@ -22,7 +22,9 @@
                      <div class="form-group" id="member">
                       <h3 for="member" >新增成員</h3>
                          <div class="list-group" style="margin-bottom: 5px">
+
                          <div class="list-group-item" v-for="(check,index) in checked" style="padding: 5px 10px; border: hidden">
+                             <input type="hidden" name="users[]" v-model="check"/>
                              @{{ check }}
                          <button type="button" @click="checked.splice(index,1)" style="background-color: transparent; border: none" class="fa fa-remove"></button>
                          </div>
@@ -38,7 +40,7 @@
                             <a href="#" @click="select(message.name)" class="list-group-item" style="padding: 5px 10px">@{{ message.name }}</a>
                             </div>
                     </div>
-                    <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
+                    <div class="form-group {{ $errors->has('introduction') ? 'has-error' : '' }}">
                       <h3 for="introduction">團隊介紹</h3>
                       <textarea rows="5" class="form-control" name="introduction" placeholder="團隊介紹"></textarea>
                       @if ($errors->has('introduction'))
@@ -49,7 +51,7 @@
                     </div>
                     <div class="form-group">
                       <label for="submit"></label>
-                      <button type="submit" class="btn btn-primary">創建</button>
+                      <button @click="submit()" type="submit" class="btn btn-primary">創建</button>
                     </div>
                   </form>
                 </div>

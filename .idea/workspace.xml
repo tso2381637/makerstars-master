@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6244e3f5-5bdd-46ee-b059-37aea46b10c8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env.example" afterPath="$PROJECT_DIR$/.env.example" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_ide_helper.php" afterPath="$PROJECT_DIR$/_ide_helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/TeamController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/TeamController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/team.create.js" afterPath="$PROJECT_DIR$/public/js/team.create.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/team/team-create.blade.php" afterPath="$PROJECT_DIR$/resources/views/team/team-create.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +26,8 @@
       <file leaf-file-name="team.create.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/team.create.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="737">
-              <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            <state relative-caret-position="1749">
+              <caret line="38" column="14" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -42,15 +35,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="team-create.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="team-create.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/team/team-create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="5" column="56" lean-forward="false" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+            <state relative-caret-position="530">
+              <caret line="26" column="79" lean-forward="false" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="79" />
               <folding>
                 <element signature="e#1083#1109#0#HTML" expanded="true" />
-                <element signature="e#1198#1239#0#HTML" expanded="true" />
-                <element signature="e#2115#2141#0#HTML" expanded="true" />
+                <element signature="e#1199#1240#0#HTML" expanded="true" />
+                <element signature="e#2199#2225#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,8 +62,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="923">
-              <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+            <state relative-caret-position="446">
+              <caret line="58" column="44" lean-forward="false" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -79,7 +72,7 @@
       <file leaf-file-name="welcome.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-151">
+            <state relative-caret-position="8">
               <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
               <folding />
             </state>
@@ -89,18 +82,18 @@
       <file leaf-file-name="team-up.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/team-up.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5467">
-              <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+            <state relative-caret-position="1484">
+              <caret line="55" column="60" lean-forward="false" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TeamController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TeamController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TeamController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+            <state relative-caret-position="-318">
+              <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
               <folding>
                 <element signature="e#40#53#0#PHP" expanded="true" />
               </folding>
@@ -135,7 +128,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AccountController.php" />
         <option value="$PROJECT_DIR$/resources/views/accounts/settings.blade.php" />
-        <option value="$PROJECT_DIR$/.env.example" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/config/broadcasting.php" />
         <option value="$PROJECT_DIR$/resources/views/team-up.blade.php" />
@@ -154,14 +146,15 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/scout/config/scout.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/TeamController.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/.env.example" />
         <option value="$PROJECT_DIR$/public/js/team.create.js" />
         <option value="$PROJECT_DIR$/resources/views/team/team-create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/TeamController.php" />
       </list>
     </option>
   </component>
@@ -393,7 +386,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
-    <property name="SearchEverywhereHistoryKey" value="teamup&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/team-up.blade.php&#10;forum&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/forum.blade.php&#10;tea&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/team/team-create.blade.php&#10;wel&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/welcome.blade.php&#10;sock&#9;FILE&#9;file://D:/Code/makerstars-master/socket.js&#10;routes&#9;FILE&#9;file://D:/Code/makerstars-master/app/Http/routes.php&#10;team&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/team/team-create.blade.php&#10;team.&#9;FILE&#9;file://D:/Code/makerstars-master/public/js/team.create.js&#10;team.create&#9;FILE&#9;file://D:/Code/makerstars-master/public/js/team.create.js&#10;master&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/layouts/master.blade.php&#10;scout.php&#9;FILE&#9;file://D:/Code/makerstars-master/vendor/laravel/scout/config/scout.php&#10;user&#9;null&#9;null&#10;app&#9;FILE&#9;file://D:/Code/makerstars-master/config/app.php&#10;.env&#9;FILE&#9;file://D:/Code/makerstars-master/.env&#10;teamcon&#9;FILE&#9;file://D:/Code/makerstars-master/app/Http/Controllers/TeamController.php&#10;controlle.php&#9;FILE&#9;file://D:/Code/makerstars-master/app/Http/Controllers/Controller.php&#10;routeser&#9;FILE&#9;file://D:/Code/makerstars-master/app/Providers/RouteServiceProvider.php&#10;eventse&#9;null&#9;null&#10;composer.lock&#9;FILE&#9;file://D:/Code/makerstars-master/composer.lock&#10;composer&#9;FILE&#9;file://D:/Code/makerstars-master/composer.json&#10;teamc&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/team/team-create.blade.php&#10;usertables&#9;FILE&#9;file://D:/Code/makerstars-master/database/seeds/UsersTableSeeder.php&#10;seed&#9;FILE&#9;file://D:/Code/makerstars-master/database/seeds/DatabaseSeeder.php&#10;ideas&#9;null&#9;null&#10;we&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/welcome.blade.php&#10;top&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/layouts/partials/top.blade.php&#10;member&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/member.blade.php&#10;teamcr&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/team/team-create.blade.php&#10;navbar&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/layouts/partials/navbar.blade.php&#10;create.bla&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/ideas/create.blade.php&#10;broad&#9;FILE&#9;file://D:/Code/makerstars-master/config/broadcasting.php&#10;welcome&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/welcome.blade.php&#10;socket.&#9;FILE&#9;file://D:/Code/makerstars-master/socket.js&#10;pusher&#9;null&#9;null&#10;app.php&#9;FILE&#9;file://D:/Code/makerstars-master/config/app.php&#10;user_&#9;FILE&#9;file://D:/Code/makerstars-master/database/migrations/2014_10_12_000000_create_users_table.php&#10;register&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/auth/register.blade.php&#10;r&#9;FILE&#9;file://D:/Code/makerstars-master/app/Http/routes.php&#10;acco&#9;FILE&#9;file://D:/Code/makerstars-master/app/Http/Controllers/AccountController.php&#10;setting&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/accounts/settings.blade.php&#10;data&#9;FILE&#9;file://D:/Code/makerstars-master/config/database.php&#10;dat&#9;FILE&#9;file://D:/Code/makerstars-master/config/database.php&#10;home&#9;null&#9;null&#10;.htac&#9;FILE&#9;file://D:/Code/makerstars-master/public/.htaccess&#10;autolo&#9;FILE&#9;file://D:/Code/makerstars-master/bootstrap/autoload.php&#10;regis&#9;FILE&#9;file:///Applications/MAMP/htdocs/makerstars-master/resources/views/auth/register.blade.php&#10;account&#9;null&#9;null&#10;sett&#9;FILE&#9;file:///Applications/MAMP/htdocs/makerstars-master/resources/views/accounts/settings.blade.php&#10;provider&#9;FILE&#9;file:///Applications/MAMP/htdocs/makerstars-master/vendor/laravel/socialite/src/Contracts/Provider.php&#10;providerre&#9;FILE&#9;file:///Applications/MAMP/htdocs/makerstars-master/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php" />
+    <property name="SearchEverywhereHistoryKey" value=".env.e&#9;FILE&#9;file://D:/Code/makerstars-master/.env.example&#10;.env&#9;FILE&#9;file://D:/Code/makerstars-master/.env&#10;teamup&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/team-up.blade.php&#10;forum&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/forum.blade.php&#10;tea&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/team/team-create.blade.php&#10;wel&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/welcome.blade.php&#10;sock&#9;FILE&#9;file://D:/Code/makerstars-master/socket.js&#10;routes&#9;FILE&#9;file://D:/Code/makerstars-master/app/Http/routes.php&#10;team&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/team/team-create.blade.php&#10;team.&#9;FILE&#9;file://D:/Code/makerstars-master/public/js/team.create.js&#10;team.create&#9;FILE&#9;file://D:/Code/makerstars-master/public/js/team.create.js&#10;master&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/layouts/master.blade.php&#10;scout.php&#9;FILE&#9;file://D:/Code/makerstars-master/vendor/laravel/scout/config/scout.php&#10;user&#9;null&#9;null&#10;app&#9;FILE&#9;file://D:/Code/makerstars-master/config/app.php&#10;teamcon&#9;FILE&#9;file://D:/Code/makerstars-master/app/Http/Controllers/TeamController.php&#10;controlle.php&#9;FILE&#9;file://D:/Code/makerstars-master/app/Http/Controllers/Controller.php&#10;routeser&#9;FILE&#9;file://D:/Code/makerstars-master/app/Providers/RouteServiceProvider.php&#10;eventse&#9;null&#9;null&#10;composer.lock&#9;FILE&#9;file://D:/Code/makerstars-master/composer.lock&#10;composer&#9;FILE&#9;file://D:/Code/makerstars-master/composer.json&#10;teamc&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/team/team-create.blade.php&#10;usertables&#9;FILE&#9;file://D:/Code/makerstars-master/database/seeds/UsersTableSeeder.php&#10;seed&#9;FILE&#9;file://D:/Code/makerstars-master/database/seeds/DatabaseSeeder.php&#10;ideas&#9;null&#9;null&#10;we&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/welcome.blade.php&#10;top&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/layouts/partials/top.blade.php&#10;member&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/member.blade.php&#10;teamcr&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/team/team-create.blade.php&#10;navbar&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/layouts/partials/navbar.blade.php&#10;create.bla&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/ideas/create.blade.php&#10;broad&#9;FILE&#9;file://D:/Code/makerstars-master/config/broadcasting.php&#10;welcome&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/welcome.blade.php&#10;socket.&#9;FILE&#9;file://D:/Code/makerstars-master/socket.js&#10;pusher&#9;null&#9;null&#10;app.php&#9;FILE&#9;file://D:/Code/makerstars-master/config/app.php&#10;user_&#9;FILE&#9;file://D:/Code/makerstars-master/database/migrations/2014_10_12_000000_create_users_table.php&#10;register&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/auth/register.blade.php&#10;r&#9;FILE&#9;file://D:/Code/makerstars-master/app/Http/routes.php&#10;acco&#9;FILE&#9;file://D:/Code/makerstars-master/app/Http/Controllers/AccountController.php&#10;setting&#9;FILE&#9;file://D:/Code/makerstars-master/resources/views/accounts/settings.blade.php&#10;data&#9;FILE&#9;file://D:/Code/makerstars-master/config/database.php&#10;dat&#9;FILE&#9;file://D:/Code/makerstars-master/config/database.php&#10;home&#9;null&#9;null&#10;.htac&#9;FILE&#9;file://D:/Code/makerstars-master/public/.htaccess&#10;autolo&#9;FILE&#9;file://D:/Code/makerstars-master/bootstrap/autoload.php&#10;regis&#9;FILE&#9;file:///Applications/MAMP/htdocs/makerstars-master/resources/views/auth/register.blade.php&#10;account&#9;null&#9;null&#10;sett&#9;FILE&#9;file:///Applications/MAMP/htdocs/makerstars-master/resources/views/accounts/settings.blade.php&#10;provider&#9;FILE&#9;file:///Applications/MAMP/htdocs/makerstars-master/vendor/laravel/socialite/src/Contracts/Provider.php" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -482,12 +475,12 @@
       <workItem from="1482749513392" duration="4200000" />
       <workItem from="1482762355278" duration="2622000" />
       <workItem from="1482804337029" duration="1424000" />
-      <workItem from="1482806439586" duration="17741000" />
+      <workItem from="1482806439586" duration="31249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72641000" />
+    <option name="totallyTimeSpent" value="86149000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
@@ -645,13 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env.example">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/pusher/pusher-php-server/lib/Pusher.php" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AccountController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -785,13 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="843">
-          <caret line="45" column="47" lean-forward="false" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1529">
@@ -862,13 +841,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/team.create.js">
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="737">
-          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
+          <caret line="45" column="47" lean-forward="false" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="45" column="47" lean-forward="false" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/team-up.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1484">
+          <caret line="55" column="60" lean-forward="false" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="58" column="44" lean-forward="false" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -880,48 +889,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/team/team-create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-151">
-          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="530">
+          <caret line="26" column="79" lean-forward="false" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="79" />
+          <folding>
+            <element signature="e#1083#1109#0#HTML" expanded="true" />
+            <element signature="e#1199#1240#0#HTML" expanded="true" />
+            <element signature="e#2199#2225#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/team-up.blade.php">
+    <entry file="file://$PROJECT_DIR$/public/js/team.create.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5467">
-          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1749">
+          <caret line="38" column="14" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TeamController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        <state relative-caret-position="-318">
+          <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
           <folding>
             <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="923">
-          <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/team/team-create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="5" column="56" lean-forward="false" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
-          <folding>
-            <element signature="e#1083#1109#0#HTML" expanded="true" />
-            <element signature="e#1198#1239#0#HTML" expanded="true" />
-            <element signature="e#2115#2141#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -8,7 +8,7 @@ var name = new Vue({
         checked:[],
         messages : [],
         query : '',
-        loading:false
+        loading:false,
     },
     methods: {
         search: function () {
@@ -36,7 +36,7 @@ var name = new Vue({
             }
             this.messages=[];
             this.query='';
-            }
+            },
     },
     watch:{
         query:function () {
