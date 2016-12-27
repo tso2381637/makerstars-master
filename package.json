@@ -13,7 +13,9 @@
     "redis": "^2.6.3",
     "socket.io": "^1.5.1",
     "vue": "^2.0.6",
-    "vueify": "^8.5.4"
+    "vue-resource": "^1.0.3",
+    "vueify": "^8.5.4",
+    "vuetify": "^0.7.10"
   },
   "browserify": {
     "transform": [

@@ -3,9 +3,10 @@
 namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
-
+use Laravel\Scout\Searchable;
 class User extends Authenticatable
 {
+    use Searchable;
     protected $table = 'users';
 
     /**
@@ -30,7 +31,10 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
-
+    public function searchableAs()
+    {
+        return 'posts_index';
+    }
     public function ideas()
     {
         return $this->hasMany(Idea::class);

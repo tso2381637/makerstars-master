@@ -18,13 +18,15 @@ class TeamController extends Controller
       return view('team.team-create');
     }
     public function search(Request $request){
-        $error = ['error' => 'error'];
+        $error = ['error' => 'No results found'];
         if($request->has('q')){
-            $posts = User::where('name',$request->get('q'))->get();
+            $posts = User::search($request->get('q'))->paginate(5);
 
-            return $posts-count();
+            return $posts->count() ? $posts : $error;
         }
-        return $error;
+        else {
+            return $error;
+        }
         }
     public function store(Requests\TeamStoreRequest $request)
     {

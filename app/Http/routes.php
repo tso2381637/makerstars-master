@@ -70,7 +70,7 @@ Route::post('auth/login', 'Auth\LoginController@login');
 Route::get('/logout', 'Auth\LoginController@logout');
 
 // 註冊路由...
-// Route::get('auth/register', 'Auth\AuthController@getRegister');
+Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 Route::auth();
 

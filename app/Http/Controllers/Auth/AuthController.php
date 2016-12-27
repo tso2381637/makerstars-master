@@ -25,7 +25,7 @@ class AuthController extends Controller
     |
     */
 
-    use AuthenticatesAndRegistersUsers, ThrottlesLogins;
+    use ThrottlesLogins;
 
     /**
      * Where to redirect users after login / registration.
@@ -41,7 +41,7 @@ class AuthController extends Controller
      */
     public function __construct()
     {
-        $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
+        $this->middleware('guest', ['except' => 'logout']);
     }
 
     /**

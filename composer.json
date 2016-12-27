@@ -18,7 +18,9 @@
         "intervention/image": "^2.3",
         "barryvdh/laravel-debugbar": "^2.3",
         "pusher/pusher-php-server": "^2.6",
-        "fzaninotto/faker": "^1.6"
+        "fzaninotto/faker": "^1.6",
+        "laravel/scout": "^2.0",
+        "algolia/algoliasearch-client-php": "^1.13"
     },
     "require-dev": {
         "mockery/mockery": "0.9.*",
